@@ -1,0 +1,127 @@
+.formdatalis {
+  color: white;
+}
+
+.ant-form-item-label > label {
+  color: white;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.ant-radio-wrapper {
+  color: white;
+}
+
+.radio_btn_antd {
+  margin-bottom: 20px;
+}
+
+.circleimg {
+  position: fixed;
+  left: 0px;
+  /* bottom: 0px; */
+  z-index: 1;
+  margin-top: 42px;
+  /* transform: scale(0.9); */
+}
+
+.alert_form {
+  z-index: 200;
+  position: fixed;
+  margin-top: 42px;
+  width: 388px !important;
+  margin-left: 88px;
+}
+
+@media (max-width: 768px) {
+  .alert_form {
+    position: absolute;
+    z-index: 200;
+  }
+}
+
+.form-view {
+  /* overflow: scroll; */
+  z-index: 10;
+}
+
+.loader_form {
+  height: 100%;
+}
+
+.ant-spin-nested-loading > div > .ant-spin .ant-spin-text {
+  position: absolute;
+  color: #0ed470;
+  text-shadow: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ant-spin-dot-item {
+  background-color: #0ed470;
+}
+
+.ant-spin-nested-loading {
+  background: rgba(0, 0, 0, 0);
+}
+
+.ant-spin-nested-loading > div > .ant-spin {
+  /* top: 126px; */
+  height: 100vh;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #0ed470 !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #0ed470;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: #0ed470;
+}
+
+.div-head {
+  overflow-y: hidden !important;
+}
+
+/* @media (min-width: 768px) {
+  .formdatalist {
+    overflow-y: scroll;
+    height: 600px;
+    padding-bottom: 42px;
+    padding-right: 8px;
+    scrollbar-width: 0px;
+  }
+
+  .div-head {
+    height: 90vh;
+  }
+  .parent_scroll {
+    overflow: hidden;
+  }
+
+  .formdatalist::-webkit-scrollbar {
+    display: none;
+  }
+
+  .div-head::-webkit-scrollbar {
+    display: none;
+  }
+} */
+
+.parent_scroll {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .navwidth {
+    max-width: 100% !important;
+  }
+  .parent_scroll {
+    margin-right: 32px;
+  }
+}
