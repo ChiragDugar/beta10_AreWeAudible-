@@ -3,6 +3,12 @@ import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./Components/LandingPage/LandingPage";
+import Form from "./Components/Form/Form";
+import Results from "./Components/Results/Results";
+import DummyNavbar from "./Components/DummyNavbar/DummyNavbar";
+import DiseaseIndividual from "./Components/Results/DiseaseIndividual";
+import Doctor from "./Components/Doctor/doctorList";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -11,7 +17,11 @@ function App() {
         <DummyNavbar />
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          
+          <Route path="/form" component={Form} />
+          <Route path="/results" component={Results} />
+          <Route path="/detailed-results" component={DiseaseIndividual} />
+          <Route path="/doctors" component={Doctor} />
+          <Route path="/about" component={About} />
         </Switch>
       </div>
     </BrowserRouter>
